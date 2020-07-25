@@ -3,23 +3,36 @@
 }
 
 :root{
-    --navbarheight: 90px;
+    --navbarheight: 100px;
+}
+
+html{
+    min-width: 720px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 200px;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 header img{
     position: absolute;
-    top: 30px;
+    top: 20px;
     left: 30px;
     height: 70px;
 }
 
 header nav{
     position: relative;
-    margin: 10px auto 0;
-    top: 10px;
-    right: 0;
+    /* margin: 10px auto 0; */
+    top: 0px;
+    right: 20px;
     text-align: end;
     width: 100%;
+    border-radius: 10px;
     height: var(--navbarheight);
     padding-bottom: 10px;
     background: #FFFFFF;
@@ -34,6 +47,7 @@ header nav a{
     text-transform: uppercase;
     color: #1B69B4;
     position: relative;
+    top: 10px;
     text-decoration: none;
     line-height: var(--navbarheight);
     z-index: 1;
@@ -43,8 +57,8 @@ header nav a{
 
 header nav .animate{
     position: absolute;
-    height: 60%;
-    top: 10px;
+    height: 70%;
+    top: 20px;
     z-index: 0;
     background: #FDB717;
     border-radius: 8px;
@@ -52,47 +66,119 @@ header nav .animate{
 }
 
 header a:nth-child(1){
-    width: 10%;
+    width: 120px;
 }
 
 header nav .top-bar,a:nth-child(1):hover~.animate{
-    width: 10%;
-    right: 30%;
-    min-width: 100px;
+    /* width: 100px; */
+    right: 360px;
+    min-width: 120px;
 }
 
 header a:nth-child(2){
-    width: 10%;
+    width: 120px;
 }
 
 header nav .top-bar,a:nth-child(2):hover~.animate{
-    width: 10%;
-    right: 20%;
-    min-width: 100px;
+    /* width: 100px; */
+    right: 240px;
+    min-width: 120px;
 }
 
 header a:nth-child(3){
-    width: 10%;
+    width: 120px;
 }
 
 header nav .top-bar,a:nth-child(3):hover~.animate{
-    width: 10%;
-    right: 10%;
-    min-width: 100px;
+    /* width: 100px; */
+    right: 120px;
+    min-width: 120px;
 }
 
 header a:nth-child(4){
-    width: 10%;
+    width: 120px;
 }
 
 header nav .top-bar,a:nth-child(4):hover~.animate{
-    width: 10%;
-    right: 0%;
-    min-width: 100px;
+    /* width: 100px; */
+    right: 0px;
+    min-width: 120px;
 }
 
 
 .footer-text{
     text-align: center;
-    bottom: 5%;
+    margin-top: -50px;
+    z-index: 2;
 }
+
+.specc{
+    position: relative;
+    top: 2vh;
+    width: 35%;
+    min-width: 600px;
+}
+
+#home-section{
+    position: relative;
+    top: 99px;
+    height: 110vh;
+    background-image: url("banner02.png");
+    background-size: cover;
+    background-position-y: 20px;
+}
+
+#services-section{
+    height: 100vh;
+    position: relative;
+    top:150px;
+}
+
+.services-header{
+    font-size: 64px;
+    font-weight: 600;
+    color: #222D5B;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.services-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    justify-items: center;
+    
+    grid-gap: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    color: #222D5B; 
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 150px;
+}
+
+.services-card{
+    background-color: #FDB717;
+    border-radius: 20px;
+    border-color: #FDB717;
+    width: 100%;
+    height: 200%;
+}
+
+
+.services-details{
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    
+}
+
+
+
+
+@media (max-width:768px) {
+    nav a{
+        visibility: hidden;
+    }
+} 
