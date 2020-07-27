@@ -14,6 +14,12 @@ html{
     overflow-y: scroll;
 }
 
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
 .topbar-mobile{
     display: none;
 }
@@ -132,7 +138,8 @@ header nav .top-bar,a:nth-child(4):hover~.animate{
 #home-section{
     position: absolute;
     top: var(--navbarheight);
-    width: 100%;
+    width: 100vw;
+    background-repeat: no-repeat;
     top: 10vh;
     height: 100%;
     background-image: url("banner01.png");
@@ -151,7 +158,6 @@ header nav .top-bar,a:nth-child(4):hover~.animate{
 
 
 
-
 /* HOME SECTION */
 
 
@@ -160,8 +166,8 @@ header nav .top-bar,a:nth-child(4):hover~.animate{
 #services-section{
     height: 100vh;
     width: 100%;
-    position: relative;
-    top: 100vh;
+    position: absolute;
+    top: 110vh;
     transform: translateY(20%);
 }
 
@@ -169,21 +175,21 @@ header nav .top-bar,a:nth-child(4):hover~.animate{
     font-size: 64px;
     font-weight: 500;
     color: #222D5B;
-    margin-left: 64px;
-    margin-top: 64px;
+    margin-left: 48px;
+    margin-top: 10px;
 }
 
 .services-cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
     justify-items: center;
-    grid-gap: 25px;
+    grid-gap: 50px;
     text-align: center;
     font-size: 24px;
     font-weight: 400;
     color: #222D5B; 
     position: relative;
-    top: 50px;
+    top: 10vh;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
@@ -193,9 +199,10 @@ header nav .top-bar,a:nth-child(4):hover~.animate{
 .services-card{
     background-color: #FDB717;
     border-radius: 20px;
-    border-color: #FDB717;
     width: 100%;
     position: relative;
+    padding: 10px;
+    
 }
 
 .services-card:first-child{
@@ -219,12 +226,27 @@ li{
     margin-top:10px
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #check{
     display: none;
 }
-
-
-
 
 .show-menu-btn,.hide-menu-btn{
     transition: 0.5s;
@@ -256,6 +278,53 @@ li{
 
 
 
+
+
+
+
+
+
+
+
+
+/* WORKS SECTION  */
+
+
+#works-section{ 
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 210vh;
+    transform: translateY(20%);
+}
+
+.works-header{
+    font-size: 64px;
+    font-weight: 500;
+    color: #222D5B;
+    margin-left: 48px;
+    margin-top: 48px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE RESPONSIVENESS */
 
 
 
