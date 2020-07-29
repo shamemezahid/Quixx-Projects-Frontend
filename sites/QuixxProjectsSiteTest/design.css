@@ -9,7 +9,7 @@
 html{
     min-width: 720px;
     scroll-behavior: smooth;
-    scroll-padding-top: 200px;
+    scroll-padding-top: 12vh;
     overflow-x: hidden;
     overflow-y: scroll;
 }
@@ -163,7 +163,6 @@ header nav .top-bar,a:nth-child(4):hover~.animate{
 
 
 
-
 /*HEADER SECTION : NAVIGATION BAR*/
 
 
@@ -183,7 +182,7 @@ header nav .top-bar,a:nth-child(4):hover~.animate{
 .specc{
     position: relative;
     top: 10vh;
-    left: 10vw;
+    left: 10vh;
     height: 60%;
     width: 30%;
     min-width: 500px;
@@ -201,15 +200,14 @@ header nav .top-bar,a:nth-child(4):hover~.animate{
     height: 100vh;
     width: 100%;
     position: absolute;
-    top: 110vh;
-    transform: translateY(20%);
+    top: 111vh;
 }
 
 .services-header{
     font-size: 64px;
     font-weight: 500;
     color: #222D5B;
-    margin-left: 48px;
+    margin-left: 8vh;
     margin-top: 10px;
 }
 
@@ -223,7 +221,7 @@ header nav .top-bar,a:nth-child(4):hover~.animate{
     font-weight: 400;
     color: #222D5B; 
     position: relative;
-    top: 10vh;
+    top: 1vh;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
@@ -286,9 +284,10 @@ li{
 
 
 
-
 /* WORKS SECTION  */
 
+
+/*
 
 #works-section{ 
     height: 100vh;
@@ -307,9 +306,7 @@ li{
 }
 
 
-
-
-
+ */
 
 
 
@@ -331,7 +328,7 @@ li{
 
 
 
-@media (max-width:1080px) {
+@media (max-width:960px) {
     
     .topbar-mobile{
         display: block;
@@ -361,11 +358,12 @@ li{
     }
     .nav-items{
         position: fixed;
-        width: 100%;
+        width: 75%;
         height: 100vh;
         background: #ffffff;
         right: -100%;
         top: 10vh;
+        border-radius: 0;
         text-align: center;
         padding-top: 50px 0;
         line-height: normal;
@@ -422,6 +420,9 @@ footer {
     position: fixed;
     left: 0;
     bottom: 0;
+    height: 5%;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     background-color:white;
     color: black;
