@@ -16,8 +16,9 @@ html{
 
 
 body{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 100vh 100vh 100vh;
+    margin-top: 10vh;
 }
 
 .topbar-mobile{
@@ -32,9 +33,9 @@ header{
 }
 
 header img{
-    position: absolute;
-    top: 10px;
-    left: 30px;
+    position: fixed;
+    top: 1vh;
+    left:2vh;
     z-index: 10;
     /* height: 70px; */
     height:8vh;
@@ -126,6 +127,39 @@ header nav .top-bar,a:nth-child(4):hover~.animate{
     right: 0px;
     min-width: 150px;
 }
+
+
+
+
+
+
+
+
+#check{
+    display: none;
+}
+
+.show-menu-btn{
+    transition: 0.5s;
+    font-size: 7vh;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    right: 5vh;
+    top: 2vh;
+}
+
+.show-menu-btn:hover,
+.hide-menu-btn:hover{
+    color: #FDB717;
+}
+
+#chk{
+    position: absolute;
+    visibility: hidden;
+    z-index: -10;
+}
+
 
 
 
@@ -239,40 +273,6 @@ li{
 
 
 
-
-
-
-
-
-#check{
-    display: none;
-}
-
-.show-menu-btn,.hide-menu-btn{
-    transition: 0.5s;
-    font-size: 60px;
-    cursor: pointer;
-    display: none;
-    float: right;
-    margin-right: 50px;
-  }
-.show-menu-btn i{
-    line-height: 100px;
-}
-.hide-menu-btn i{
-    line-height: 100px;
-}
-
-.show-menu-btn:hover,
-.hide-menu-btn:hover{
-    color: #FDB717;
-}
-
-#chk{
-    position: absolute;
-    visibility: hidden;
-    z-index: -10;
-}
 
 
 
