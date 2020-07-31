@@ -533,12 +533,12 @@ li{
     }
 
     .services-cards{
+        display: flex;
+        flex-direction: column;
         position: relative;
         width: 90%;
         left: 50%;
         transform: translateX(-50%);
-        grid-template-rows: repeat(2fr);
-        
     }
 
     .services-card{
@@ -549,6 +549,7 @@ li{
         display: flex;
         flex-direction: column;
         width: 90%;
+        margin-bottom: 20vh;
     }
 
     #works-header .project-banner{
