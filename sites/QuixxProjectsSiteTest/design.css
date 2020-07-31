@@ -210,7 +210,7 @@ header nav .top-bar,a:nth-child(4):hover~.animate{
     background-color: #FDB717;
     border-radius: 20px;
     border: 2px solid #222D5B;
-    width: 100%;
+    width: 95%;
     position: relative;
     padding: 10px;
     box-shadow: -5px 5px 10px rgba(50, 50, 50, 0.2); 
@@ -261,19 +261,21 @@ li{
 }
 
 #works-header .project-head{
+    position: absolute;
+    left: 10px;
     height: 50vh;
     right: 0;
     float: left;
     float: top;
 }
 
-.projects-title{
+/* .projects-title{
     grid-column-start: 1;
     grid-column-end: 4;
     text-align: left;
     font-size: 5vh;
     color: #222D5B;
-}
+} */
 
 .projects-section{
     height: 110vh;
@@ -328,20 +330,15 @@ li{
 
 
 
-.contact-content{
-    display: grid;
-    grid-template-rows: 1fr 3fr;
-}
-
-
 .contact-section {
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 20vh;
     left: 5%;
-    width: 90vw;
-    height: 60vh;
+    width: 90%;
+    height: 75vh;
     padding: 40px;
-    transform: translateY(-50%);
+    /* margin-top: 50px; */
+    margin-bottom: 10vh;
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.2);
     border-radius: 10px;
@@ -424,6 +421,7 @@ li{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
+    min-width: 100%;
     text-align: center;
 }
 
@@ -431,7 +429,7 @@ li{
     padding: 20px;
     display: flex;
     align-items: center;
-    
+    justify-content: center;
 
 }
 
@@ -445,20 +443,17 @@ li{
 
 
 
-
-
 /* MOBILE RESPONSIVENESS */
 
 
 
 
-
-
-@media (max-width:720px) {
+@media (max-width:768px) {
 
     body{
         width: fit-content;
-        overflow: hidden;
+        min-width: 100%;
+        max-width: 100%;
     }
     
     .topbar-mobile{
@@ -490,12 +485,12 @@ li{
     .nav-items{
         position: fixed;
         width: 75%;
-        height: 80vh;
+        height: 75vh;
         background: #ffffff;
         right: -100%;
         top: 10vh;
         border-radius:10px;
-        border: 10px solid;
+        border: 5px solid;
         border-color: #FDB717;
         text-align: center;
         padding-top: 50px 0;
@@ -542,7 +537,12 @@ li{
         width: 90%;
         left: 50%;
         transform: translateX(-50%);
+        grid-template-rows: repeat(2fr);
         
+    }
+
+    .services-card{
+        width: 90%;
     }
 
     .project-cards{
@@ -555,9 +555,42 @@ li{
         display: none;
     }
 
+
+    #works-header .project-head{
+        position: relative;
+        height: 50vh;
+        width: 95%;
+        right: 0;
+        float: left;
+        float: top;
+    }
+
+    .call-mail{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-width: 100%;
+        text-align: center;
+        
+    }
+
+    .contact-section{
+        box-shadow: 0 0 0 0 ;
+    }
+
+    .contact-section h1{
+        font-size: 4vh;
+        color: #222D5B;
+        margin-top: 10vh;
+    }
+    
+
+
     footer{
         display: none;
     }
+
+    
 
 
 } 
@@ -568,6 +601,7 @@ footer {
     position: fixed;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     left: 0;
     bottom: 0;
     min-height: 5vh;
