@@ -46,12 +46,12 @@ header nav{
     /* left: 0px; */
     text-align: end;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
     height: var(--navbarheight);
     min-height: 16px;
     background: #FFFFFF;
     font-size: 0;
-    box-shadow: 0 3px 0 0 rgba(50, 50, 50, 0.2);
+    box-shadow: 0 3px 0 3px rgba(50, 50, 50, 0.2);
 }
 
 .nav-item{
@@ -184,7 +184,7 @@ header nav .top-bar,a:nth-child(4):hover~.animate{
 .services-header{
     font-size: 5vh;
     color: #222D5B;
-    margin-left: 8vh;
+    margin-left: 5%;
     margin-top: 2vh;
 }
 
@@ -353,9 +353,10 @@ li{
     position: relative;
 }
 
-.contact-section .user-box input{
+.contact-section .user-box input,
+.contact-section .user-box textarea{
     width: 100%;
-    padding: 10px 0;
+    padding: 15px 0;
     font-size: 16px;
     color: #000000;
     margin-bottom: 30px;
@@ -367,7 +368,7 @@ li{
 
 .contact-section .user-box label{
     position: absolute;
-    top:0;
+    top:1vh;
     left: 0;
     padding: 10px 0;
     font-size: 16px;
@@ -377,7 +378,9 @@ li{
   }
 
 .contact-section .user-box input:focus ~ label,
-.contact-section .user-box input:valid ~ label {
+.contact-section .user-box input:valid ~ label,
+.contact-section .user-box:nth-child(3) textarea:focus~label,
+.contact-section .user-box:nth-child(3) textarea:valid~label {
   top: -20px;
   left: 0;
   color: #222D5B;
@@ -448,7 +451,7 @@ li{
 
 
 
-@media (max-width:768px) {
+@media (max-width:1024px) {
 
     body{
         width: fit-content;
@@ -465,12 +468,12 @@ li{
         /* left: 0px; */
         text-align: end;
         width: 100%;
-        border-radius: 10px;
+        border-radius: 5px;
         height: 10vh;
         min-height: 16px;
         background: #ffffff;
         font-size: 0;
-        box-shadow: 0 3px 0 0 rgba(50, 50, 50, 0.2);
+        box-shadow: 0 3px 0 0 rgba(50, 50, 50, 0.1);
         z-index: -1;
     }
 
@@ -526,7 +529,8 @@ li{
     }
     .specc{
         width: 70%;
-        height: 70%;
+        top: 0;
+        left:5%;
         /* position: absolute;
         left: 50%;
         transform: translateX(-50%); */
@@ -572,7 +576,10 @@ li{
         width: 100%;
         min-width: 100%;
         text-align: center;
-        
+    }
+
+    .call-mail div{
+        justify-content: left;
     }
 
     .contact-section{
@@ -586,9 +593,14 @@ li{
     }
     
 
-
-    footer{
-        display: none;
+    .footer-text{
+        text-align: center;
+    }
+    .social-btns{
+        visibility: visible;
+        display: block;
+        position: fixed;
+        bottom: 20vh;
     }
 
     
@@ -602,7 +614,6 @@ footer {
     position: fixed;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     left: 0;
     bottom: 0;
     min-height: 5vh;
