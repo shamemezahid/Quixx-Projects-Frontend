@@ -48,14 +48,14 @@ header nav{
     width: 100%;
     border-radius: 5px;
     height: var(--navbarheight);
-    min-height: 16px;
+    min-height: 32px;
     background: #FFFFFF;
     font-size: 0;
     box-shadow: 0 3px 0 3px rgba(50, 50, 50, 0.2);
 }
 
 .nav-item{
-    font-size: 2vh;
+    font-size: medium;
     font-weight: 600;
     min-width: 100px;
     text-transform: uppercase;
@@ -168,9 +168,7 @@ header nav .top-bar,a:nth-child(4):hover~.animate{
 
 
 
-
 /* HOME SECTION */
-
 
 
 
@@ -278,7 +276,7 @@ li{
 } */
 
 .projects-section{
-    height: 110vh;
+    /* height: 110vh; */
     position: relative;
     margin-bottom: 20vh;
     margin-top: 10vh;
@@ -295,7 +293,6 @@ li{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-
 }
 
 .project-card{
