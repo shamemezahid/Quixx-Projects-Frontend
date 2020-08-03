@@ -219,16 +219,12 @@ header nav .top-bar,a:nth-child(4):hover~.animate{
     border: 5px solid #222D5B;
     transition: 0.3s all;
 }
-/* 
-.services-card:first-child{
-    height: 70vh;
-}
-.services-card:last-child{
-    height: 70vh;
-} */
+
  
 .services-card:nth-child(n){
-    height: 60vh;
+    /* height: 40vh; */
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 
