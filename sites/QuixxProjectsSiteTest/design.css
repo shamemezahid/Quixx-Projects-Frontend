@@ -278,7 +278,7 @@ li{
 
 .project-cards{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2vh;
     top: 5vh;
     bottom: 10vh;
@@ -301,7 +301,8 @@ li{
 
 .descrip{
     visibility: hidden;
-    transition: 1s ease;
+    display: none;
+    transition: 0.5s ease;
 }
 
 .project-card:hover{
@@ -311,6 +312,12 @@ li{
 
 .project-card:hover .descrip{
     visibility: visible;
+    display: initial;
+}
+
+.project-card:hover img{
+    display: none;
+    transition: 0.5s linear;
 }
 
 
