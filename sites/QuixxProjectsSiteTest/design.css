@@ -299,6 +299,11 @@ li{
     box-shadow: -5px 5px 10px rgba(50, 50, 50, 0.2);
 }
 
+.project-card h1,
+.project-card h4{
+    display: none;
+}
+
 .descrip{
     visibility: hidden;
     display: none;
@@ -310,14 +315,17 @@ li{
     transition: 1s ease;
 }
 
-.project-card:hover .descrip{
+.project-card:hover .descrip,
+.project-card:hover h1,
+.project-card:hover h4{
     visibility: visible;
-    display: initial;
+    display: block;
+    transition: 0.5s linear;
 }
 
 .project-card:hover img{
-    display: none;
-    transition: 0.5s linear;
+    display: none; 
+    transition: 1s linear;
 }
 
 
