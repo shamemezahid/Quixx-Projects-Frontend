@@ -576,6 +576,7 @@ footer {
         display: flex;
         flex-direction: column;
         position: relative;
+        margin-bottom: 20vh;
         width: 90%;
         left: 50%;
         transform: translateX(-50%);
