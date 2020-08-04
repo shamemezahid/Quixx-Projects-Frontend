@@ -87,7 +87,7 @@ header nav .animate{
     bottom: 10%;
     z-index: 0;
     background: #FDB717;
-    border-radius: 8px;
+    border-radius: 10px;
     border: 1px solid #222D5B;
     transition: all 0.4s ease 0s;
 }
@@ -210,7 +210,7 @@ header nav .top-bar,a:nth-child(4):hover~.animate{
 
 .services-card{
     background-color: #FDB717;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 2px solid #222D5B;
     width: 95%;
     position: relative;
@@ -468,7 +468,8 @@ footer {
 
 .fb-btn, .ig-btn, .tw-btn, .in-btn{
     height: 5vh;
-    margin-left: 5vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
     
 }
 
@@ -522,7 +523,7 @@ footer {
         background: #ffffff;
         right: -100%;
         top: 10vh;
-        border-radius:10px;
+        border-radius:5px;
         border: 5px solid;
         border-color: #FDB717;
         text-align: center;
@@ -610,6 +611,7 @@ footer {
 
     .call-mail div{
         justify-content: left;
+        margin-left: 5%;
     }
 
     .contact-section{
