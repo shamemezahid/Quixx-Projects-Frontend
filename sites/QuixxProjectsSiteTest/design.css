@@ -18,6 +18,12 @@ body{
     margin-top: 10vh;
 }
 
+
+
+/*HEADER SECTION : NAVIGATION BAR*/
+
+
+
 .topbar-mobile{
     display: none;
 }
@@ -141,9 +147,7 @@ header nav .top-bar,a:nth-child(4):hover~.animate{
 
 
 
-
-/*HEADER SECTION : NAVIGATION BAR*/
-
+/* HOME SECTION */
 
 
 
@@ -168,7 +172,7 @@ header nav .top-bar,a:nth-child(4):hover~.animate{
 
 
 
-/* HOME SECTION */
+/* SERVICES SECTION */
 
 
 
@@ -180,7 +184,7 @@ header nav .top-bar,a:nth-child(4):hover~.animate{
 }
 
 .services-header{
-    font-size: 5vh;
+    font-size: 6vh;
     color: #222D5B;
     margin-left: 5%;
     margin-top: 2vh;
@@ -263,13 +267,6 @@ li{
     float: top;
 }
 
-/* .projects-title{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    text-align: left;
-    font-size: 5vh;
-    color: #222D5B;
-} */
 
 .projects-section{
     /* height: 110vh; */
@@ -437,6 +434,45 @@ li{
 
 
 
+/* FOOTER TEXT */
+
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    min-height: 5vh;
+    font-size: 2vh;
+    width: 100%;
+    background-color:white;
+    color: black;
+    
+}
+
+.footer-text{
+    margin-left: 5vh;
+    text-align: left;
+}
+
+
+.social-btns{
+    display: flex;
+    flex-direction: row;
+    justify-items: right;
+    justify-content: flex-end;
+    bottom: 0px;
+    margin-bottom: 0;
+}
+
+.fb-btn, .ig-btn, .tw-btn, .in-btn{
+    height: 5vh;
+    margin-left: 5vh;
+    
+}
+
+
 
 
 /* MOBILE RESPONSIVENESS */
@@ -585,62 +621,20 @@ li{
         color: #222D5B;
         margin-top: 10vh;
     }
-    
+
+    footer{
+        grid-template-columns: repeat(auto-fit, minmax(100vw,1fr));
+    }
 
     .footer-text{
         text-align: center;
     }
+
     .social-btns{
-        visibility: visible;
-        display: block;
-        position: fixed;
-        bottom: 20vh;
+        justify-content: center;
     }
 
     
 
-
 } 
-
-
-
-footer {
-    position: fixed;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    left: 0;
-    bottom: 0;
-    min-height: 5vh;
-    font-size: 2vh;
-    width: 100%;
-    background-color:white;
-    color: black;
-    text-align: left;
-    
-}
-
-.footer-text{
-    margin-left: 5vh;
-}
-
-
-.social-btns{
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    right: 5vh;
-    bottom: 0px;
-    margin-bottom: 0;
-}
-
-.fb-btn, .ig-btn, .tw-btn, .in-btn{
-    height: 5vh;
-    margin-left: 5vh;
-    
-}
-
-
-
-
-
 
