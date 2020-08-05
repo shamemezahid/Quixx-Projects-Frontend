@@ -1,9 +1,5 @@
-## Shameme's Page Here 🙋 
+## Hi, Shameme's Page Here 🙋 
 
-Haah Nooob, 
+Not Really sure what this repo is for, guess I'll put some of my smoll personal coding projects in here soon. idk
 
-You're not supposed to be here.
-as you already are here
-###### well... 
-
-![meme](https://ih0.redbubble.net/image.718840662.0143/ap,550x550,12x12,1,transparent,t.u1.png)
+![meme](https://blog.hubspot.com/hubfs/Shrug-Emoji.jpg)
